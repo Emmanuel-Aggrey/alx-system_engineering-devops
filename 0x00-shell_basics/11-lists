@@ -1,2 +1,3 @@
 #!/bin/bash
-ls
+(ls -al | cat) | (ls -al .. | cat) | (ls -al /boot | cat) | awk 'BEGIN{ORS=" "}{print}'
+
